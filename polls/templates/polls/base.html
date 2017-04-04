@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>Polls App</title>
+		<link rel="stylesheet" href="{% static 'css/resets.css'%}" type="text/css">
+		<link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+	</head>
+	<body>
+		<header>
+			<h1>Polls App</h1>
+			<p>Make your votes Count!</p>
+		</header>
+		<section>
+			{% block content%}
+			{% endblock %}
+		</section>
+	</body>
+</html>
